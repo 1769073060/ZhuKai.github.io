@@ -1,0 +1,23 @@
+/* 
+	导航条样式
+ 
+ */
+
+#login-box{
+	/* width: 10px;/* 宽度 */ 
+	/* height: auto;/* 高度 */
+	margin: 10px 20px;/* 上右下左  居中*/
+	margin-top:5px ;/*边距 */
+	background: #00000060;/* 设置半透明颜色  后面加数字可以增加透明度*/
+	padding: 20px 5px;
+}
+
+
+
+
+
+
+
+
+
+
