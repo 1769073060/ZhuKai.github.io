@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+	 <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <title>JQ单词</title>
+    <link rel="stylesheet" href="css/word.css">
+    <script src='js/word.js'></script>
+    <style>
+        /*全局reset*/
+        		*{
+        			margin:0px;
+        			padding: 0px;
+        		}
+        		body{
+        			background: #333;
+        			color:#ddd;
+        			margin-bottom: 100px;
+        		}
+        		input,button{
+        			border:none;
+        			outline: none;
+        		}
+        		/*全局reset结束*/
+        
+        		/*banner条开始*/
+        		.banner{
+        			width: 70%;
+        			margin: 0 auto;
+        			margin-top: 30px;
+        			border-radius: 10px;
+        			background: #444;
+        			height: 330px;
+        			padding: 50px 90px;
+        			box-sizing: border-box;
+        		}
+        		.banner .title{
+        			font-size: 60px;
+        			font-family: 宋体;
+        			margin-top: 20px;
+        			margin-bottom: 10px;
+        			color:white;
+        			transition:color 0.35s;
+        		}
+        		.banner .title:hover{
+        			color:#Fc0;
+        		}
+        		.banner .content{
+        			font-size: 21px;
+        			font-weight: 200;
+        			font-family: 宋体;
+        			margin-bottom: 15px;
+        		}
+        		.banner button{
+        			padding: 8px 15px;
+        			font-size: 18px;
+        			border-radius: 6px;
+        			background: #Fc0;
+        			color: #444;
+        			font-weight: 400;
+        			transition:background 0.35s;
+        
+        		}
+        		.banner button:hover{
+        			background: #f90;
+        		}
+        		/*banner条结束*/
+        
+        		/*单词大容器*/
+        		.container{
+        			width: 70%;
+        			margin:0 auto;
+        			margin-top: 50px;
+        			line-height: 25px;
+        			display: flex;
+        			justify-content: space-between;
+        			flex-wrap: wrap;
+        
+        		}
+        		
+        		a{
+        			display: block;
+        			text-align: center;
+        			margin-top: 20px;
+        			font-size: 20px;
+        			color:#fc0;
+        			text-decoration: none;
+        
+        		}
+        		.wordItemBox{
+        			display: inline-block;
+        			width: 370px;
+        
+        			border-radius: 10px;
+        			background: #444;
+        			padding-left: 15px;
+        			padding-right: 15px;
+        			margin-top: 15px;
+        			padding-bottom: 10px;
+        			
+        		}
+        		hr{
+        			height:10px;
+        			border:none;
+        			border-top:1px groove #666;
+        			border-top:1px groove #ddd; 
+        		}
+        		.wordItemBox .word{
+        			color:#fc0;
+        			font-size: 24px;
+        			line-height: 45px;
+        			display: inline-block;
+        			padding-right: 10px;
+        			transition:color 0.35s;
+        		}
+        		.wordItemBox .word:hover{
+        			color:#f90;
+        		}
+        		.wordItemBox .translate{
+        
+        		}
+        		.wordItemBox .pronounce{
+        			display: inline-block;
+        		}
+				
+				
+        		/*单词大容器结束*/
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+    	<a href="../index.html">返回首页</a>
+        <p class="title">1小时搞定程序员单词</p>
+        <p class="content">GOGOGO!!!
+    						</p>
+        <button>还等什么！GOGOGO!</button>
+    </div>
+    <div class="container">
+		 <div class="wordItemBox">
+		     <p class="word">Insert</p>
+		     <hr>
+		     <p class="translate">插入（表里的数据)</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Update</p>
+		     <hr>
+		     <p class="translate">修改（表里的数据）alter 修改表对象</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Modify</p>
+		     <hr>
+		     <p class="translate">修改（列的数据类型）</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Delete  </p>
+		     <hr>
+		     <p class="translate">删除（删除表数据）</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Drop </p>
+		     <hr>
+		     <p class="translate">删除（删除表对象）</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Try</p>
+		     <hr>
+		     <p class="translate">尝试；努力</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Truncate  </p>
+		     <hr>
+		     <p class="translate">删除所有数据</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Grant </p>
+		     <hr>
+		     <p class="translate"> 授予权限</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Revoke  </p>
+		     <hr>
+		     <p class="translate">撤销权限</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Commit</p>
+		     <hr>
+		     <p class="translate">提交事务</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Rollback</p>
+		     <hr>
+		     <p class="translate">回滚事务</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Savepoint</p>
+		     <hr>
+		     <p class="translate">设置保存点</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Constraint   </p>
+		     <hr>
+		     <p class="translate">约束</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Foreign  key</p>
+		     <hr>
+		     <p class="translate">  外键</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Primary key</p>
+		     <hr>
+		     <p class="translate"> 主键</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Unique</p>
+		     <hr>
+		     <p class="translate"> 独一 的</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Check</p>
+		     <hr>
+		     <p class="translate">（检查约束）</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">References</p>
+		     <hr>
+		     <p class="translate">指向</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Sequence</p>
+		     <hr>
+		     <p class="translate">序列</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Start with</p>
+		     <hr>
+		     <p class="translate">以…开头</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Increment  by</p>
+		     <hr>
+		     <p class="translate">指定序列号之间的间隔，按…递增</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Maxvalue</p>
+		     <hr>
+		     <p class="translate"> 最大值</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Minvalue</p>
+		     <hr>
+		     <p class="translate"> 最小值</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Cache</p>
+		     <hr>
+		     <p class="translate">电脑高速缓冲存储器；贮存物；隐藏处</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Cycle</p>
+		     <hr>
+		     <p class="translate">循环</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Order</p>
+		     <hr>
+		     <p class="translate"> 顺序</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Rownum</p>
+		     <hr>
+		     <p class="translate">行号</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Tablespace </p>
+		     <hr>
+		     <p class="translate">表空间</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Identified  by</p>
+		     <hr>
+		     <p class="translate">由…鉴别  设置用户密码</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Default</p>
+		     <hr>
+		     <p class="translate">默认</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Account </p>
+		     <hr>
+		     <p class="translate">账户</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Unlock</p>
+		     <hr>
+		     <p class="translate">解锁</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Cascade</p>
+		     <hr>
+		     <p class="translate">级联参数，级联删除</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Datafile </p>
+		     <hr>
+		     <p class="translate"> 存储路径</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Concat</p>
+		     <hr>
+		     <p class="translate"> 合并多个数组；合并多个字符串</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">length </p>
+		     <hr>
+		     <p class="translate">长度</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">trim</p>
+		     <hr>
+		     <p class="translate">修剪；整理</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">replace</p>
+		     <hr>
+		     <p class="translate">替换</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">sysdate</p>
+		     <hr>
+		     <p class="translate">用来得到系统的当前日期</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">last</p>
+		     <hr>
+		     <p class="translate">最后的</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">month </p>
+		     <hr>
+		     <p class="translate">月</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">between</p>
+		     <hr>
+		     <p class="translate">在...之间</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">next</p>
+		     <hr>
+		     <p class="translate">下一个</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">declare</p>
+		     <hr>
+		     <p class="translate">声明</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">begin</p>
+		     <hr>
+		     <p class="translate">开始</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">exception</p>
+		     <hr>
+		     <p class="translate"> 异常</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">end</p>
+		     <hr>
+		     <p class="translate">结束</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">verify</p>
+		     <hr>
+		     <p class="translate">校验，证实，证明</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">constant</p>
+		     <hr>
+		     <p class="translate">常量</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">loop</p>
+		     <hr>
+		     <p class="translate">环；圈，循环</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">transaction  [træn'zækʃ(ə)n] </p>
+		     <hr>
+		     <p class="translate">事务</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">immediate</p>
+		     <hr>
+		     <p class="translate">立即的</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Exclusive</p>
+		     <hr>
+		     <p class="translate">排外的；专一的</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Procedure  [prə'siːdʒə] </p>
+		     <hr>
+		     <p class="translate">程序，过程</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Package</p>
+		     <hr>
+		     <p class="translate">包</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Cursor ['kɜːsə]</p>
+		     <hr>
+		     <p class="translate">游标库,光标库 </p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Ref</p>
+		     <hr>
+		     <p class="translate">参考</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Fetch</p>
+		     <hr>
+		     <p class="translate">取来，拿</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Bulk  [bʌlk]</p>
+		     <hr>
+		     <p class="translate">大部分，是扩大</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Count</p>
+		     <hr>
+		     <p class="translate">计数</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Trigger  ['trɪgə]</p>
+		     <hr>
+		     <p class="translate">触发，引发</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Timing  event</p>
+		     <hr>
+		     <p class="translate">间事件时</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Raise </p>
+		     <hr>
+		     <p class="translate"> 提升，提出</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Application</p>
+		     <hr>
+		     <p class="translate"> 申请，应用</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">Jdbc连接</p>
+		     <hr>
+		     <p class="translate">Jdbc连接</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">CallableStatement</p>
+		     <hr>
+		     <p class="translate">可调用语句，用来执行操作的</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">register</p>
+		     <hr>
+		     <p class="translate">注册</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">batch</p>
+		     <hr>
+		     <p class="translate">批处理：</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">clear</p>
+		     <hr>
+		     <p class="translate">清除</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">jdbc:oracle:thin:@localhost:1521:orcl   </p>
+		     <hr>
+		     <p class="translate"> --oracle的url</p>
+		 </div>
+		 <div class="wordItemBox">
+		     <p class="word">ResultSet</p>
+		     <hr>
+		     <p class="translate">结果集</p>
+		 </div>
+		 
+		
+		 
+    </div>
+</body>
+<script>
+    var url = $('#audio').attr('src');
+
+    // 点击发音图标里发音
+    $('img.pronounce').click(function(){
+        var word = $(this).parent().find('p').eq(0).text();
+        newurl = url.replace('hello',word);
+        $('#audio').attr('src',newurl).trigger('play');
+    });
+
+    // 点击单词时发音
+    $('p.word').click(function(){
+        var word = $(this).text();
+        newurl = url.replace('hello',word);
+        $('#audio').attr('src',newurl).trigger('play');
+    })
+
+    $('.banner button').click(function(){
+        $(window).scrollTop(404);
+    })
+</script>
+
+</html>

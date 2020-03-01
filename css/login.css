@@ -1,0 +1,74 @@
+body{
+	background: url("../img/背景图.jpg");
+	background-repeat:no-repeat ;/* 设置不重复 */
+	background-size:100% auto ;/* 然后让图片充满 */
+}
+#login-box{
+	width: 30%;/* 宽度 */
+	height: auto;/* 高度 */
+	margin: 0 auto;/* 上右下左  居中*/
+	margin-top: 15%;/* 边距  */
+	text-align: center;
+	background: #00000060;/* 设置半透明颜色  后面加数字可以增加透明度 */
+	padding: 20px 50px;
+}
+#login-box h1{
+	color: #FFFFFF;
+}
+#login-box .form{
+	margin: 0 auto;/* 让输入框往下点 */
+/* 	margin-top:50px; */
+}
+#login-box .form .item{
+	margin-bottom: 20px;/* 设置输入宽之间的上下距离 */
+}
+#login-box .form .item i{
+	font-size: 22px;/* 设置图标大小 */
+	color:#fff;
+}
+#login-box .form .item input{
+	width: 220px;
+	border: 0;/* 消掉input框的颜色 */
+	border-bottom: 3px solid #fff;/* 定义input的下划线 */
+	padding: 5px 10px;
+	background: #ffffff00;/* 設置输入框颜色 */
+}
+
+#login-box button{
+	margin-top: 15px;
+	width: 200px;
+	height: 39px;
+	font-size: 20px;
+	font-weight: 700;/* 字体粗细 */
+	background-image: linear-gradient(to top, #fddb92 0%, #f9f586 100%);
+	border: 0;
+	border-radius: 15px;/* 按钮圆角 */
+	position: relative;/* 相對佈局 */
+}
+#login-box button:active{
+	top:2px;/* 向下偏移2px */
+}
+/* input::-webkit-input-placeholder { /* WebKit browsers */
+            /* color: blanchedalmond; */
+        /* } */ 
+
+
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+            color: blanchedalmond;/* 输入框字体颜色 */
+			font-size: 20px;/* 字体颜色 */
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
